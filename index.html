@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>javasc </title>
+    <script>
+        function on() {
+            document.getElementById('myImage').src = 'pic_bulbon.gif';
+        }
+        function off() {
+            document.getElementById('myImage').src = 'pic_bulboff.gif';
+        }
+        function colo() {
+            document.getElementById("demo").style.color = "red";
+        }
+        var r = 0;
+        var g = 0;
+        var b = 0;
+        function racolo() {
+            r = Math.round(Math.random() * 255);
+            g = Math.round(Math.random() * 255);
+            b = Math.round(Math.random() * 255);
+            document.getElementById("demo1").style.color = "rgb(" + r + "," + g + "," + b + ")";
+        }
+        var si = 20;
+        function tesiz() {
+            si = si + 5;
+            document.getElementById("para").style.fontSize = si + "px";
+        }
+    </script>
+    <style>
+        #demo1 {
+            font-size: 40px;
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <img src="pic_bulboff.gif" id="myImage">
+    <button onclick="on()">on</button>
+    <button onclick="off()">off</button>
+    <hr>
+    <p id="para">Welcome to javascript</p>
+    <button onclick="tesiz()"> size ++</button>
+    <hr>
+    <p id="demo">Welcome to javascript</p>
+    <button onclick="colo()"> color</button>
+    <hr>
+    <p id="demo1">Welcome to javascript</p>
+    <button onclick="racolo()"> random color</button>
+</body>
+</html>
