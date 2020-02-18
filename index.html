@@ -1,52 +1,52 @@
-<!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-    <title>javasc </title>
-    <script>
-        function on() {
-            document.getElementById('myImage').src = 'pic_bulbon.gif';
-        }
-        function off() {
-            document.getElementById('myImage').src = 'pic_bulboff.gif';
-        }
-        function colo() {
-            document.getElementById("demo").style.color = "red";
-        }
-        var r = 0;
-        var g = 0;
-        var b = 0;
-        function racolo() {
-            r = Math.round(Math.random() * 255);
-            g = Math.round(Math.random() * 255);
-            b = Math.round(Math.random() * 255);
-            document.getElementById("demo1").style.color = "rgb(" + r + "," + g + "," + b + ")";
-        }
-        var si = 20;
-        function tesiz() {
-            si = si + 5;
-            document.getElementById("para").style.fontSize = si + "px";
-        }
-    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>sumanan</title>
     <style>
-        #demo1 {
-            font-size: 40px;
-            font-weight: bold;
-            font-family: Arial, Helvetica, sans-serif;
+        .desi01 {
+            position: relative;
+            margin: auto;
+            height: 500px;
+            width: 100%;
+            background-color: rgb(97, 6, 6);
+        }
+
+        .desi01-01 {
+            position: absolute;
+            left: 0;
+            height: 300px;
+            width: 100%;
+            background-color: rgb(2, 14, 83);
+        }
+        .desi01-img{
+            position: absolute; 
+            padding-top: 200px;
+        }
+        .img1{
+            height: 200px;
+            width: 200px;
+            border-radius: 100%;
+        }
+        .t1{
+            padding-top: 100px;
+            margin: auto;
+            text-align: center;
+            color: white;
         }
     </style>
 </head>
+
 <body>
-    <img src="pic_bulboff.gif" id="myImage">
-    <button onclick="on()">on</button>
-    <button onclick="off()">off</button>
-    <hr>
-    <p id="para">Welcome to javascript</p>
-    <button onclick="tesiz()"> size ++</button>
-    <hr>
-    <p id="demo">Welcome to javascript</p>
-    <button onclick="colo()"> color</button>
-    <hr>
-    <p id="demo1">Welcome to javascript</p>
-    <button onclick="racolo()"> random color</button>
+    <div class="desi01">
+        
+        <div class="desi01-01">
+                <h1 class="t1">sumanan</h1>
+        </div>
+        <div class="desi01-img"><img src="profile.jpg" class="img1"></div>
+    </div>
 </body>
+
 </html>
